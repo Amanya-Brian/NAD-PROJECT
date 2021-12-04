@@ -1,19 +1,21 @@
+<%-- 
+    Document   : index
+    Created on : Dec 4, 2021, 8:07:16 AM
+    Author     : User
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Vaccination Tracker</title>
     </head>
     <body>
         <h1>Welcome to Group 18 Vaccination Tracker</h1>
         <h3>Here are our services:</h3>
         <ul>
-            <li><a href="">Health Care Administration</a></li>
+            <li><a href="health_care_registration.jsp">Health Care Administration</a></li>
             <li><a href="">Vaccine Inventory</a></li>
             <li><a href="">Vaccine Administration</a></li>
             <li><a href="">Health Care Administration</a></li>
