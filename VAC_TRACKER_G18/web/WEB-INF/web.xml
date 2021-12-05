@@ -4,9 +4,17 @@
         <servlet-name>SampleServlet</servlet-name>
         <servlet-class>SampleServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>vaccineServlet</servlet-name>
+        <servlet-class>org.health.vaccine.vaccineServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SampleServlet</servlet-name>
         <url-pattern>/SampleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>vaccineServlet</servlet-name>
+        <url-pattern>/vaccineServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
