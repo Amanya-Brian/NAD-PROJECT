@@ -5,6 +5,16 @@
         <servlet-class>org.health.health.HealthCentreRegistration</servlet-class>
     </servlet>
     <servlet>
+
+        <servlet-name>vaccineServlet</servlet-name>
+        <servlet-class>org.health.vaccine.vaccineServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VaccineDistribution</servlet-name>
+        <servlet-class>org.health.vaccine.VaccineDistribution</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>HealthReport</servlet-name>
         <servlet-class>org.health.health.HealthReport</servlet-class>
     </servlet>
@@ -12,9 +22,18 @@
         <servlet-name>HealthCentreRegistration</servlet-name>
         <url-pattern>/HealthCentreRegistration</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>HealthReport</servlet-name>
         <url-pattern>/HealthReport</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>vaccineServlet</servlet-name>
+        <url-pattern>/vaccineServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VaccineDistribution</servlet-name>
+        <url-pattern>/VaccineDistribution</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
