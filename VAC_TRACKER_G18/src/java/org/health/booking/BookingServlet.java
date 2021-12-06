@@ -2,21 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
-package org.health.vaccine;
+package org.health.booking;
 
-import javax.servlet.RequestDispatcher;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Home
+ * @author Jovan
  */
-public class vaccineServlet extends HttpServlet {
+@WebServlet(name = "BookingServlet", urlPatterns = {"/BookingServlet"})
+public class BookingServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,29 +32,31 @@ public class vaccineServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        PrintWriter out = response.getWriter();
+        try {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet vaccineServlet</title>");            
+            out.println("<title>Servlet BookingServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            
-            //getting data
-            String type = request.getParameter("type");
-            String status = request.getParameter("status");
-            String amount = request.getParameter("amount");
-            
-            //sending data to the vaccine tag handler
-            request.setAttribute("type", type);
-            request.setAttribute("status", status);
-            request.setAttribute("amount", amount);
-            RequestDispatcher rq = request.getRequestDispatcher("vaccine.jsp");
-            rq.forward(request, response);
-            
+            String name=request.getParameter("name");
+            String place=request.getParameter("place");
+            String time=request.getParameter("time");
+            String date=request.getParameter("date");
+            String vaccine=request.getParameter("vaccine");
+            request.setAttribute("name",name);
+            request.setAttribute("place",place);
+            request.setAttribute("time", time);
+            request.setAttribute("date",date);
+            request.setAttribute("vaccine",vaccine);
+            RequestDispatcher res =request.getRequestDispatcher("bookingjsp.jsp");
+            res.forward(request,response);
             out.println("</body>");
             out.println("</html>");
+        } finally {
+            out.close();
         }
     }
 
