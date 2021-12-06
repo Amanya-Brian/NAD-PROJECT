@@ -17,7 +17,7 @@ class DatabaseCon {
  private String user = "root";
     private String password  ="root";
     private String jdbcdriver = "com.mysql.jdbc.Driver";
-    private String jdbcConnection = "jdbc:mysql://localhost:8889/classWork";
+    private String jdbcConnection = "jdbc:mysql://localhost:8889/VAC_TRACKER_G18";
     
 
     

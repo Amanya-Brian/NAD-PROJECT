@@ -21,16 +21,6 @@
       </listener>
     -->
   <tag>
-    <name>vaccineTagHandler</name>
-    <tag-class>org.health.vaccine.vaccineTagHandler</tag-class>
-    <body-content>scriptless</body-content>
-  </tag>
-  <tag>
-    <name>vaccineTagHandler</name>
-    <tag-class>org.health.vaccine.vaccineTagHandler</tag-class>
-    <body-content>scriptless</body-content>
-  </tag>
-  <tag>
     <name>vaccineTag</name>
     <tag-class>org.health.vaccine.vaccineTag</tag-class>
     <body-content>scriptless</body-content>
