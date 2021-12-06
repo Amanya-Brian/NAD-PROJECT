@@ -12,6 +12,18 @@
         <title>Save Health Center</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <p>Health Center Registered successfully.</p>
+        <h1>Registered Health Centres:</h1>
+        <% 
+        
+        String name = request.getParameter("name");
+        String location = request.getParameter("location");
+        String number_of_patients = request.getParameter("number_of_patients");
+
+        %>
+        
+        <%@taglib uri="WEB-INF/tlds/healthCentreRegistration.tld" prefix="health" %>
+        <health:HealthCentreRegistrationHandler name="${name}" location="${location}" number_of_patients="${number_of_patients}"></health:HealthCentreRegistrationHandler>
+        <a href="health_centre_registration.jsp">Register Health Center</a>
     </body>
 </html>

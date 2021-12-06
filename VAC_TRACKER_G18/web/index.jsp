@@ -1,8 +1,8 @@
-<%-- 
+<!-- 
     Document   : index
     Created on : Dec 4, 2021, 8:07:16 AM
-    Author     : User
---%>
+    Author     : User-->
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
         <h3>Here are our services:</h3>
         <ul>
             <li><a href="health_care_registration.jsp">Health Care Administration</a></li>
-            <li><a href="">Vaccine Inventory</a></li>
+            <li><a href="vaccine.jsp">Vaccine Inventory</a></li>
             <li><a href="taking-vaccine.jsp">Vaccine Administration</a></li>
             <li><a href="">Health Care Administration</a></li>
             <li><a href="">Vaccine Booking and Advisory</a></li>
