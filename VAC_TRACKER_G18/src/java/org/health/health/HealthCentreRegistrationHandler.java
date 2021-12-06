@@ -41,7 +41,7 @@ public class HealthCentreRegistrationHandler extends SimpleTagSupport {
             
             Connection c;
             try {
-                c = DriverManager.getConnection("jdbc:mysql://localhost:3306/vac_tracker","root","");
+                c = DriverManager.getConnection("jdbc:mysql://localhost:3306/vac_tracker_g18","root","");
                 Statement s = c.createStatement();
                 
                 s.executeUpdate("insert into health_centre set name='"+name+"',location='"+location+"',number_of_patients='"+number_of_patients+"'");

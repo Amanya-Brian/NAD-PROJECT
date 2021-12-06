@@ -55,7 +55,7 @@ public class HealthReport extends HttpServlet {
             
             Connection c;
             try {
-                c = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/vac_tracker","root","");
+                c = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/vac_tracker_g18","root","");
                 Statement s = c.createStatement();
                 
                 String query = "select * from health_centre";
