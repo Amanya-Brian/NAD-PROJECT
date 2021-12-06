@@ -31,6 +31,7 @@
             out.println("type "+type);
         %>
         <vac:vaccineTag type="${type}" status="${status}" amount="${amount}"></vac:vaccineTag>
+        <a href="VaccineDistribution">Vaccine Distribution</a>
         <a href="index.jsp">Back</a>
     </body>
 </html>

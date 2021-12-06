@@ -10,6 +10,7 @@ import jakarta.servlet.jsp.tagext.JspFragment;
 import jakarta.servlet.jsp.tagext.SimpleTagSupport;
 import java.sql.Connection;
 import static java.sql.JDBCType.NULL;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -58,6 +59,7 @@ public class vaccineTag extends SimpleTagSupport {
                 if(type.length()>=1){
                     st.execute("INSERT INTO `vaccines` (`type`, `status`,`amount`) " + "VALUES ('"+type+"', '"+status+"','"+amount+"');");
                 }
+                
             } catch (SQLException ex) {
                 out.println("Error inserting records : "+ex);
             }
