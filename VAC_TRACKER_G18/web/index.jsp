@@ -1,8 +1,8 @@
-<%-- 
+<!-- 
     Document   : index
     Created on : Dec 4, 2021, 8:07:16 AM
-    Author     : User
---%>
+    Author     : User-->
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
         <h1>Welcome to Group 18 Vaccination Tracker</h1>
         <h3>Here are our services:</h3>
         <ul>
-            <li><a href="health_care_registration.jsp">Health Care Administration</a></li>
+            <li><a href="health_centre_registration.jsp">Health Care Administration</a></li>
             <li><a href="">Vaccine Inventory</a></li>
             <li><a href="">Vaccine Administration</a></li>
             <li><a href="">Health Care Administration</a></li>
