@@ -21,6 +21,8 @@
                 width: 50%;
                 border-radius: 10px;
                 justify-content: center;
+                border-radius: 10px;
+                text-align: center;
             }
         </style>
         

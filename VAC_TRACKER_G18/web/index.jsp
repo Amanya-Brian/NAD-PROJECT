@@ -16,7 +16,9 @@
         <h3>Here are our services:</h3>
         <ul>
             <li><a href="health_care_registration.jsp">Health Care Administration</a></li>
+
             <li><a href="vaccine.jsp">Vaccine Inventory</a></li>
+
             <li><a href="taking-vaccine.jsp">Vaccine Administration</a></li>
             <li><a href="">Health Care Administration</a></li>
             <li><a href="">Vaccine Booking and Advisory</a></li>

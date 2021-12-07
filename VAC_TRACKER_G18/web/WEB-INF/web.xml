@@ -20,6 +20,7 @@
         <servlet-name>allVaccinated</servlet-name>
         <url-pattern>/allVaccinated</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>saveV</servlet-name>
         <url-pattern>/saveV</url-pattern>
@@ -56,6 +57,7 @@
     <servlet-mapping>
         <servlet-name>VaccineDistribution</servlet-name>
         <url-pattern>/VaccineDistribution</url-pattern>
+
     </servlet-mapping>
     <session-config>
         <session-timeout>

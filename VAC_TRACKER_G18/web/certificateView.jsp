@@ -64,7 +64,7 @@
                 <td>Vaccine_Administered:</td>
                 <td><jsp:getProperty name="v" property="vaccineadministered"></jsp:getProperty></td>
             </tr>
-             
+
              <tr>
                     <td></td>
                     <td><button><a href="/VAC_TRACKER_G18/taking-vaccine.jsp">BACK TO VACCINATION PAGE</a></button></td>
