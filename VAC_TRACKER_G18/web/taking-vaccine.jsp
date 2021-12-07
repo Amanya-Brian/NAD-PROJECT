@@ -18,14 +18,11 @@
             form{
                 position: relative;
                 height: 50px;
-<<<<<<< HEAD
-                border-radius: 10px;
-                text-align: center;
-=======
                 width: 50%;
                 border-radius: 10px;
                 justify-content: center;
->>>>>>> vaccinated
+                border-radius: 10px;
+                text-align: center;
             }
         </style>
         
